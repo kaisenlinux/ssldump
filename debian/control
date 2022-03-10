@@ -1,0 +1,15 @@
+Source: ssldump
+Section: net
+Priority: optional
+Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
+Build-Depends: debhelper-compat (= 13), libjson-c-dev, libnet1-dev, libpcap-dev (>= 0.6.2), libssl-dev,
+Standards-Version: 4.6.0
+Homepage: https://github.com/adulau/ssldump
+Vcs-Browser: https://gitlab.com/kaisenlinux/packages/ssldump
+Vcs-Git: https://gitlab.com/kaisenlinux/packages/ssldump.git
+
+Package: ssldump
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: tcpdump
+Description: SSL and TLS analyser
