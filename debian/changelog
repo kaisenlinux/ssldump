@@ -1,3 +1,9 @@
+ssldump (1.5-1kaisen) kaisen-packages; urgency=medium
+
+  * Import 1.5 version
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 29 May 2022 11:23:31 +0100
+
 ssldump (1.4-1kaisen) kaisen-packages; urgency=medium
 
   * First packaging for Kaisen Linux
