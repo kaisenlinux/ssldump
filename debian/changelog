@@ -1,3 +1,9 @@
+ssldump (1.5-2kaisen) kaisen-packages; urgency=medium
+
+  * Rebuilt to update the libssl version required for ssldump
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 09 Dec 2022 03:59:06 +0100
+
 ssldump (1.5-1kaisen) kaisen-packages; urgency=medium
 
   * Import 1.5 version
