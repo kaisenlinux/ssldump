@@ -1,12 +1,12 @@
 # ssldump - (de-facto repository gathering patches around the cyberspace)
 
-![Clang CI](https://github.com/adulau/ssldump/workflows/Clang%20CI/badge.svg)
-![GCC CI](https://github.com/adulau/ssldump/workflows/GCC%20CI/badge.svg)
+[![Build CI](https://github.com/adulau/ssldump/actions/workflows/build.yml/badge.svg)](https://github.com/adulau/ssldump/actions/workflows/build.yml)
+[![CodeQL analysis](https://github.com/adulau/ssldump/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/adulau/ssldump/actions/workflows/codeql-analysis.yml)
 
 # Release and tagging
 
-- Current version of ssldump is [v1.5](https://github.com/adulau/ssldump/releases/tag/v1.5) (released: 2022-05-26)
-- Previous version of ssldump is [v1.4](https://github.com/adulau/ssldump/releases/tag/v1.4) (released: 2021-04-12) - [ChangeLog](https://raw.githubusercontent.com/adulau/ssldump/master/ChangeLog)
+- Current version of ssldump is [v1.6](https://github.com/adulau/ssldump/releases/tag/v1.6) (released: 2023-02-03)
+- Previous version of ssldump is [v1.5](https://github.com/adulau/ssldump/releases/tag/v1.5) (released: 2022-05-26) - [ChangeLog](https://raw.githubusercontent.com/adulau/ssldump/master/ChangeLog)
 
 # What about the original ssldump?
 
@@ -43,6 +43,15 @@ other too (but this is just a collateral damage).
 - I used it for a relatively small project called Passive SSL. For more information, [Passive SSL Passive Detection and Reconnaissance Techniques, to Find, Track, and Attribute Vulnerable ”Devices”](https://www.first.org/resources/papers/conf2015/first_2015_-_leverett_-_dulaunoy_-_passive_detection_20150604.pdf). Additional back-end code available is in the [crl-monitor ](https://github.com/adulau/crl-monitor/tree/master/bin/x509) repository.
 - ssldump is used in the [D4-Project](https://github.com/D4-project/).
 
+# Where ssldump is available? 
+
+- Alpine Linux [ssldump](https://pkgs.alpinelinux.org/packages?name=ssldump&branch=edge&repo=&arch=&maintainer=)
+- Arch Linux [ssldump](https://aur.archlinux.org/packages/ssldump)
+- CentOS, RHEL, Rocky (via [EPEL](https://docs.fedoraproject.org/en-US/epel/)) [ssldump](https://packages.fedoraproject.org/pkgs/ssldump/ssldump/)
+- Fedora [ssldump](https://packages.fedoraproject.org/pkgs/ssldump/ssldump/)
+- Kali Linux [ssldump](https://www.kali.org/tools/ssldump/)
+- Ubuntu Linux [ssldump](http://changelogs.ubuntu.com/changelogs/pool/universe/s/ssldump/)
+
 # Build instructions
 
 On Debian & Ubuntu:
@@ -54,7 +63,7 @@ make
 (optional) make install
 ```
 
-On Fedora, Centos & RHEL:
+On Fedora, CentOS, RHEL & Rocky:
 ```
 dnf install autoconf automake gcc make openssl-devel libpcap-devel libnet-devel json-c-devel
 ./autogen.sh
