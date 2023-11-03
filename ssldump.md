@@ -1,9 +1,9 @@
 # ssldump(1) - dump SSL traffic on a network
 
-9th April 2023 - version 1.7
+14 August 2023 - version 1.8
 
 ```
-.na ssldump [ -aAdeFHjnNPqtTvxXy ] [ -i interface ]
+.na ssldump [ -aAdeFHjnNPqtTvxXyz ] [ -i interface ]
 .ti +8 [ -k keyfile ] [ -l sslkeylogfile ] [ -p password ] [ -r dumpfile ] [ -w outputpcap ]
 .ti +8 [ -S [ crypto | d | ht | H | nroff ] ] [ expression ]
 
@@ -138,6 +138,8 @@ _/dev/bpf*_.
 * **-y**  
   Decorate the output for processing with nroff/troff. Not very
   useful for the average user.
+* **-z**
+  Add timestamp in front of TCP packet description (-T)
 * _expression_  
       Selects what packets _ssldump_ will examine. Technically speaking,
       _ssldump_ supports the full expression syntax from PCAP and tcpdump.

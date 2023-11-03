@@ -1,6 +1,130 @@
 # Changelog
 
 
+## v1.8 (2023-08-14)
+
+### Changes
+
+* [doc] typo fixed. [Alexandre Dulaunoy]
+
+* [doc] v1.7 released + new changelog. [Alexandre Dulaunoy]
+
+### Other
+
+* Merge pull request #82 from wllm-rbnt/cmake. [Alexandre Dulaunoy]
+
+  cmake
+
+* Add date to version output. [William Robinet]
+
+* Add comment for MacOS. [William Robinet]
+
+* Make it work on OpenBSD and FreeBSD. [William Robinet]
+
+* Add install target for man page. [William Robinet]
+
+* Set binary install target, update doc. [William Robinet]
+
+* Update README & fix version. [William Robinet]
+
+* Update gh workflows. [William Robinet]
+
+* Print meaningful error messages. [William Robinet]
+
+* Lower cmake version requirement (Ubuntu Focal) [William Robinet]
+
+* Add FindJSONC.cmake module + fix CMakeLists.txt. [William Robinet]
+
+* Remove autotools files. [William Robinet]
+
+* Initial cmake setup. [William Robinet]
+
+* Merge pull request #80 from wllm-rbnt/ts. [Alexandre Dulaunoy]
+
+  Add -z option for printing timestamps in front of TCP headers
+
+* Add -z option for printing timestamps in front of TCP headers. [William Robinet]
+
+* Merge pull request #79 from robert-scheck/dependabot. [Alexandre Dulaunoy]
+
+  Add dependabot configuration
+
+* Add dependabot configuration. [Robert Scheck]
+
+* Merge pull request #77 from robert-scheck/macos. [Alexandre Dulaunoy]
+
+  Add macOS to CI builds
+
+* Add macOS to CI builds. [Robert Scheck]
+
+* Merge pull request #76 from robert-scheck/workflow-compiler. [Alexandre Dulaunoy]
+
+  Switch to gcc-12 (default: gcc-11), clang-14 is newest in ubuntu-latest
+
+* Switch to gcc-12 (default: gcc-11), clang-14 is newest in ubuntu-latest. [Robert Scheck]
+
+
+## v1.7 (2023-04-09)
+
+### Changes
+
+* [doc] updated man page. [Alexandre Dulaunoy]
+
+* [CREDITS] new contributor added. [Alexandre Dulaunoy]
+
+* [doc] Add distribution including this version of ssldump. [Alexandre Dulaunoy]
+
+* [doc] v1.6 released. [Alexandre Dulaunoy]
+
+* [CREDITS] updated for version 1.6. [Alexandre Dulaunoy]
+
+* [doc] v1.6 release included. [Alexandre Dulaunoy]
+
+### Other
+
+* Merge branch 'lord8266-tls1.3' [Alexandre Dulaunoy]
+
+* Fix comment. [Vishwa Pravin]
+
+* Remove irrelevant log entries, fix session ticket for tls1.2. [Vishwa Pravin]
+
+* Adding tls1.3 decryption support. [Vishwa Pravin]
+
+* Merge pull request #73 from robert-scheck/fedora. [Alexandre Dulaunoy]
+
+  Update Fedora link, mention RHEL/derivatives
+
+* Update Fedora link, mention RHEL/derivatives. [Robert Scheck]
+
+* Merge pull request #74 from robert-scheck/centos. [Alexandre Dulaunoy]
+
+  Fix typo, mention RHEL derivative
+
+* Fix typo, mention RHEL derivative. [Robert Scheck]
+
+* Merge pull request #69 from robert-scheck/ci-openssl. [Alexandre Dulaunoy]
+
+* CI: libtls-dev -> libssl-dev. [Robert Scheck]
+
+* Merge pull request #67 from robert-scheck/codeql-analysis. [Alexandre Dulaunoy]
+
+  Add CodeQL analysis
+
+* Add CodeQL analysis. [Robert Scheck]
+
+* Merge pull request #68 from robert-scheck/wrong-type. [Alexandre Dulaunoy]
+
+  For Y2K38 on 32 bit systems `time_t tv_sec` can be `long long`
+
+* For Y2K38 on 32 bit systems `time_t tv_sec` can be `long long` [Robert Scheck]
+
+* Merge pull request #66 from robert-scheck/ci-matrix. [Alexandre Dulaunoy]
+
+  Improve CI builds using matrix strategy
+
+* Improve CI builds using matrix strategy. [Robert Scheck]
+
+
 ## v1.6 (2023-02-03)
 
 ### Changes

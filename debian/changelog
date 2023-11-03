@@ -1,3 +1,9 @@
+ssldump (1.8-1kaisen) kaisen-packages; urgency=medium
+
+  * Import the 1.8 version
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 02 Nov 2023 13:46:41 +0100
+
 ssldump (1.7-1kaisen) kaisen-packages; urgency=medium
 
   * Import the 1.7 version

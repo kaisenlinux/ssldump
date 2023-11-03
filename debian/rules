@@ -1,4 +1,7 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@
+	dh $@ --buildsystem=cmake --builddirectory=_build
+
+override_dh_auto_clean:
+	rm -rf $(CURDIR)/_build
