@@ -1,5 +1,4 @@
-cmake_minimum_required(VERSION 3.16.3)
-include(CheckSymbolExists)
+cmake_minimum_required(VERSION 3.13.4)
 
 project(
     ssldump
@@ -7,6 +6,26 @@ project(
     DESCRIPTION 20230814
     LANGUAGES C
 )
+
+######## User defined options
+option(DEBUG_BUILD "Build with debug facilities" OFF)
+option(DISABLE_OPTIMIZATION "Build without compiler optimizations" OFF)
+################
+
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g")
+if(DEBUG_BUILD)
+    add_definitions(-DDEBUG)
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -ggdb3")
+endif()
+
+if(DISABLE_OPTIMIZATION)
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O0")
+else()
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O2")
+endif()
+
+include(CheckSymbolExists)
+include(GNUInstallDirs)
 
 configure_file(base/pcap-snoop.c.in base/pcap-snoop.c)
 
@@ -110,8 +129,5 @@ target_link_libraries(ssldump
         ${JSONC_LIBRARIES}
 )
 
-set(CMAKE_INSTALL_PREFIX "/usr/local")
-install(TARGETS ssldump DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
-
-set(CMAKE_INSTALL_MANDIR "/usr/local/share/man")
+install(TARGETS ssldump DESTINATION ${CMAKE_INSTALL_BINDIR})
 install(FILES ssldump.1 DESTINATION ${CMAKE_INSTALL_MANDIR}/man1)

@@ -1,3 +1,11 @@
+ssldump (1.9-1kaisen) kaisen-packages; urgency=medium
+
+  * Import the 1.9 version
+  * Drop the quilt patch usr-as-prefix
+  * Add a quilt patch to bump the version number to 1.9
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 18 Nov 2024 23:33:02 +0200
+
 ssldump (1.8-1kaisen) kaisen-packages; urgency=medium
 
   * Import the 1.8 version
